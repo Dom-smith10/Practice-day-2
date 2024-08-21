@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1 - 4-Ball Matches</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Day 1 - 4-Ball Matches</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Match 1</h2>
+            <form id="match1">
+                <label for="player1_1">Player 1 (Team Biff)</label>
+                <select id="player1_1" name="player1_1"></select>
+
+                <label for="player1_2">Player 2 (Team Biff)</label>
+                <select id="player1_2" name="player1_2"></select>
+
+                <label for="player1_3">Player 3 (Team Tails)</label>
+                <select id="player1_3" name="player1_3"></select>
+
+                <label for="player1_4">Player 4 (Team Tails)</label>
+                <select id="player1_4" name="player1_4"></select>
+
+                <h3>Enter Scores</h3>
+                <div id="holes">
+                    <!-- Dynamically generate holes based on stroke indices -->
+                </div>
+
+                <button type="button" onclick="calculateMatchResult('match1')">Calculate Result</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Match 2</h2>
+            <form id="match2">
+                <label for="player2_1">Player 1 (Team Biff)</label>
+                <select id="player2_1" name="player2_1"></select>
+
+                <label for="player2_2">Player 2 (Team Biff)</label>
+                <select id="player2_2" name="player2_2"></select>
+
+                <label for="player2_3">Player 3 (Team Tails)</label>
+                <select id="player2_3" name="player2_3"></select>
+
+                <label for="player2_4">Player 4 (Team Tails)</label>
+                <select id="player2_4" name="player2_4"></select>
+
+                <h3>Enter Scores</h3>
+                <div id="holes">
+                    <!-- Dynamically generate holes based on stroke indices -->
+                </div>
+
+                <button type="button" onclick="calculateMatchResult('match2')">Calculate Result</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Match 3</h2>
+            <form id="match3">
+                <label for="player3_1">Player 1 (Team Biff)</label>
+                <select id="player3_1" name="player3_1"></select>
+
+                <label for="player3_2">Player 2 (Team Biff)</label>
+                <select id="player3_2" name="player3_2"></select>
+
+                <label for="player3_3">Player 3 (Team Tails)</label>
+                <select id="player3_3" name="player3_3"></select>
+
+                <label for="player3_4">Player 4 (Team Tails)</label>
+                <select id="player3_4" name="player3_4"></select>
+
+                <h3>Enter Scores</h3>
+                <div id="holes">
+                    <!-- Dynamically generate holes based on stroke indices -->
+                </div>
+
+                <button type="button" onclick="calculateMatchResult('match3')">Calculate Result</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <a href="index.html">Leaderboard</a>
+            <a href="day2.html">Day 2</a>
+            <a href="day3.html">Day 3</a>
+            <a href="players.html">Player Profiles</a>
+        </nav>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
